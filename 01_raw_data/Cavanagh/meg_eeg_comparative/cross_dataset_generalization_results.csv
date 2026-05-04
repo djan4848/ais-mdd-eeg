@@ -1,0 +1,13 @@
+Classifier,Test dataset,N_test,HC,MDD,AUC,AUC_lo,AUC_hi,BalAcc,Transfer
+LogReg,MODMA (5-fold CV),53,29,24,0.583,0.42,0.738,0.54,internal
+LogReg,ds003478,91,61,30,0.567,0.44,0.683,0.501,zero-shot
+LogReg,TDBRAIN,356,47,309,0.519,0.432,0.609,0.506,zero-shot
+LogReg,ds005356,84,38,46,0.592,0.489,0.701,0.576,zero-shot
+LDA,MODMA (5-fold CV),53,29,24,0.594,0.433,0.75,0.629,internal
+LDA,ds003478,91,61,30,0.562,0.433,0.687,0.527,zero-shot
+LDA,TDBRAIN,356,47,309,0.519,0.436,0.605,0.495,zero-shot
+LDA,ds005356,84,38,46,0.588,0.483,0.7,0.589,zero-shot
+SVM-Lin,MODMA (5-fold CV),53,29,24,0.569,0.403,0.724,0.542,internal
+SVM-Lin,ds003478,91,61,30,0.528,0.418,0.64,0.51,zero-shot
+SVM-Lin,TDBRAIN,356,47,309,0.507,0.418,0.596,0.474,zero-shot
+SVM-Lin,ds005356,84,38,46,0.587,0.482,0.694,0.576,zero-shot

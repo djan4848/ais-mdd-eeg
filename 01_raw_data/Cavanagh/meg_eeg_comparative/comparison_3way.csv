@@ -1,0 +1,12 @@
+pipeline,roc_auc,paradigm,dataset
+ds003474 / Task EEG / DDS+Info+Baseline,0.836,Task (PST),ds003474
+ds003474 / Task EEG / Microstates+Baseline,0.825,Task (PST),ds003474
+ds003474 / Task EEG / Baseline+PLV,0.807,Task (PST),ds003474
+ds003478 / Resting EEG / DDS+Info+Baseline / LogReg,0.715,Resting,ds003478
+ds003478 / Resting EEG / Baseline spectral / SVM-RBF,0.701,Resting,ds003478
+ds003474 / Task EEG / Baseline spectral,0.675,Task (PST),ds003474
+ds003478 / Resting EEG / Info only / SVM-RBF,0.655,Resting,ds003478
+ds003478 / Resting EEG / DDS only / SVM-Lin,0.651,Resting,ds003478
+ds003478 / Resting EEG / DDS+Info / SVM-Lin,0.644,Resting,ds003478
+ds005356 / Task MEG+EEG / Baseline,0.585,Task (PST),ds005356
+ds005356 / Task MEG+EEG / DDS+Info,0.564,Task (PST),ds005356

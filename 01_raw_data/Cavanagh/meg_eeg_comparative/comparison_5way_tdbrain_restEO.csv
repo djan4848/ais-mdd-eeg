@@ -1,0 +1,10 @@
+dataset,paradigm,diagnosis,best_pipeline,roc_auc
+ds003474,EEG Task PST,BDI≥13,DDS+Info+Baseline,0.836
+MODMA,EEG Resting,PHQ-9 clinical,DDS+Info / LogReg,0.79
+TDBRAIN (restEO),EEG Resting,Clinical MDD/HC,Baseline spectral / LogReg,0.7267530407191962
+ds003478,EEG Resting,BDI≥13,DDS+Info+Baseline,0.715
+TDBRAIN (restEO),EEG Resting,Clinical MDD/HC,DDS+Info+Baseline / LogReg,0.6878582760444208
+ds005356,MEG+EEG Task PST,SCID,Baseline,0.585
+TDBRAIN (restEO),EEG Resting,Clinical MDD/HC,DDS+Info / MLP,0.573443798107997
+TDBRAIN (restEO),EEG Resting,Clinical MDD/HC,DDS only / LDA,0.5567013338033961
+TDBRAIN (restEO),EEG Resting,Clinical MDD/HC,Info only / LogReg,0.546512721076444

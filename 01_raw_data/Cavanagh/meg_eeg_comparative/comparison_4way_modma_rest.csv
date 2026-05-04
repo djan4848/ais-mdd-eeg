@@ -1,0 +1,9 @@
+dataset,paradigm,best_pipeline,roc_auc
+ds003474,Task EEG (PST),DDS+Info+Baseline,0.836
+ds003478,Resting EEG,DDS+Info+Baseline,0.715
+MODMA (rest),Resting EEG,Info only / LogReg,0.6773333333333333
+MODMA (rest),Resting EEG,DDS+Info+Baseline / LDA,0.6463333333333334
+MODMA (rest),Resting EEG,Baseline spectral / LDA,0.6203333333333333
+MODMA (rest),Resting EEG,DDS+Info / LogReg,0.586
+ds005356,Task MEG+EEG (PST),Baseline,0.585
+MODMA (rest),Resting EEG,DDS only / SVM-RBF,0.49733333333333335

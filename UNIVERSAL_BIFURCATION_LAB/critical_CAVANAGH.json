@@ -1,0 +1,6 @@
+{
+    "dataset": "CAVANAGH",
+    "metric": "SHAPS",
+    "critical_point_bc": 4.14715699259067,
+    "k_slope": 0.10000000000000013
+}

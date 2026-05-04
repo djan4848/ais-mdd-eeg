@@ -1,0 +1,26 @@
+AIS_pre MDD Research Program — State Freeze 2026-05-02
+======================================================================
+
+KEY CONCLUSIONS
+  PRIMARY   : AIS_pre (FCz, −200→0ms pre-feedback) CTL > MDD, d=0.817, p<0.001 (N=109; robustness −500ms variant: d=0.874)
+  MEG       : MEG partial replication EEG064, d=0.558 (ungated); EEG007 unreliable dataset-wide
+  SCAR      : MDD_past lower AIS_pre than MDD_current despite lower HamD — scar hypothesis supported
+  TDBRAIN   : AIS_rest does NOT predict rTMS remission (wrong direction, d=−0.336) — construct dissociation
+  SUBTYPE   : AIS_LOW enriched 2.8× in MDD but not discrete (GMM weakly bimodal, TEPS null)
+
+KEY STATISTICS
+  Primary EEG  d=0.806  p=0.0001  [OK]
+  MEG replic.  d=0.372  p=0.0819  [OK]
+  Scar hyp.    d=0.965  p=0.0169  [OK]
+  TDBRAIN rest d=-0.336  p=0.0308  [OK]
+
+PENDING TASKS
+  1. Magnetometer searchlight for MEG0511/MEG0921 (Cavanagh 2025 sensors)
+  2. Verify EEG064 anatomical location (posterior temporal — mismatch with FCz hypothesis)
+  3. Final manuscript Figure 1 (AIS_pre CTL vs MDD violin + ROC curve)
+  4. Formal paper section: two-axis model (low task AIS_pre + high resting AIS_rest)
+  5. Optional: contact jcavanagh@unm.edu for PST data with episode history
+
+Files saved:
+  /media/neuraldyn/PortableSSD/DEPRESSION/01_raw_data/Cavanagh/Depression_PS_Task/derivatives/RESEARCH_STATE_FROZEN.json
+  /media/neuraldyn/PortableSSD/DEPRESSION/01_raw_data/Cavanagh/Depression_PS_Task/derivatives/RESEARCH_STATE_SUMMARY.txt

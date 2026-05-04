@@ -1,0 +1,9 @@
+pipeline,roc_auc,dataset
+ds003474 / DDS+Info+Baseline,0.836,ds003474
+ds003474 / Microstates+Baseline,0.825,ds003474
+ds003474 / Baseline+Connectivity,0.807,ds003474
+ds003474 / Baseline spectral,0.675,ds003474
+ds005356 / DDS+Info / SVM-RBF,0.564,ds005356
+ds005356 / DDS only / SVM-Lin,0.554,ds005356
+ds005356 / DDS+Info+Baseline / LogReg,0.471,ds005356
+ds005356 / Info only / LogReg,0.456,ds005356

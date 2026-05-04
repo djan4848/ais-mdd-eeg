@@ -1,0 +1,6 @@
+arch,ds003474_cv_auc,ds003478_zs,TDBRAIN_zs,MODMA_zs
+LogReg (ML baseline),0.557,0.430,0.443,0.471
+DeepMLP,0.658,0.476,0.469,0.500
+AutoencoderCLF,0.663,0.526,0.468,0.497
+EnsembleMLP,0.686,0.536,0.447,0.557
+FeatureAttn,0.565,0.398,0.479,0.483

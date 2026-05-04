@@ -1,0 +1,1215 @@
+ds005356
+├── CHANGES
+├── Code
+│   ├── AIM_2_MEG_PREPROC_CARC.py
+│   ├── AIM_2_MEG_PREPROC_SOURCE.py
+│   ├── AIM_2_MEG_SOURCE_CARC.py
+│   ├── anat
+│   │   ├── sub-M87100058_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87100403_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87100481_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87102708_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87103382_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87103557_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87103820_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87104422_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87108211_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87108718_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87109185_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87110097_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87110408_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87110559_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87111894_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87112953_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87114359_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87114852_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87118946_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87121835_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87127530_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87129414_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87130775_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87130819_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87130996_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87134034_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87134159_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87134438_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87137391_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87138414_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87139247_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87139600_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87140254_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87140897_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87142287_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87142864_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87143893_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87143931_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87144409_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87145927_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87146411_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87146538_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87146735_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87146887_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87148080_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87150253_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87150443_acq-highres_T1w.nii
+│   │   ├── sub-M87150443_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87150527_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87150564_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87153425_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87154375_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87155374_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87156984_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87157961_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87160397_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87160584_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87162136_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87164176_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87164575_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87165811_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87167594_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87168299_acq-highres_T1w.nii
+│   │   ├── sub-M87168299_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87169210_acq-highres_T1w.nii
+│   │   ├── sub-M87169210_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87169286_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87170144_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87170514_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87171097_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87173764_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87174633_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87175273_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87175429_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87176537_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87178102_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87178210_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87178611_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87184941_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87185394_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87186269_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87186388_acq-highres_T1w.nii
+│   │   ├── sub-M87186388_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87187776_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87187838_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87190095_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87190604_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87192693_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87195334_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87195556_acq-highres_T1w.nii.gz
+│   │   ├── sub-M87197101_acq-highres_T1w.nii.gz
+│   │   └── sub-M87198523_acq-highres_T1w.nii.gz
+│   ├── ct_sparse is crosstalk and sss_cal is calibration.txt
+│   ├── ct_sparse_orion.fif
+│   ├── ERF_preprocess.py
+│   ├── ERP+ERF.py
+│   ├── ERP+ERF_RPE.py
+│   ├── MEG MDD IDs and Quex.xlsx
+│   ├── meg_preproc_par.sh
+│   ├── meg_preproc_source_par.sh
+│   ├── meg_source_par.sh
+│   ├── PE_integrate.py
+│   ├── permutation_clustering_test.py
+│   ├── README.txt
+│   ├── source_estimate.py
+│   ├── source_preprocess.py
+│   └── sss_cal_3046_2009-04-29.dat
+├── dataset_description.json
+├── DDS-ds005456
+│   ├── 00_core_functions
+│   │   ├── figures
+│   │   ├── __init__.py
+│   │   ├── io
+│   │   │   ├── paths.py
+│   │   │   └── __pycache__
+│   │   │       └── paths.cpython-310.pyc
+│   │   └── __pycache__
+│   │       └── __init__.cpython-310.pyc
+│   ├── 00_discovery_erp.py
+│   ├── 01_preprocessing
+│   │   ├── 01_make_evokeds.py
+│   │   ├── 02_extract_trial_roi_timeseries.py
+│   │   ├── 09_trial_qc_variance_filter.py
+│   │   ├── discovery_erp
+│   │   │   └── Grand_Average_MDD_vs_NC.png
+│   │   ├── Figure4_conceptual_summary.py
+│   │   └── __pycache__
+│   │       └── 01_make_evokeds.cpython-310.pyc
+│   ├── 02_modeling_DDS
+│   │   ├── 03b_build_residual_trial_roi_timeseries.py
+│   │   ├── 03_dds_peak_aligned_trial_by_tiral.py
+│   │   └── 04_dds_survival_audit.py
+│   ├── 03_information_dynamics
+│   │   ├── 01_extract_ais.py
+│   │   ├── 02_extract_te_interference.py
+│   │   └── 03_extract_pid_synergy.py
+│   ├── 04_statistical_analysis
+│   │   ├── 01_residual_stats.py
+│   │   ├── 02_dds_info_state_space.py
+│   │   ├── 03_frequency_synergy_interference.py
+│   │   ├── 04_phase_synergy_coupling.py
+│   │   ├── 05_phase_transition_criticality.py
+│   │   ├── 06_information_geometry_phase_transition.py
+│   │   ├── 07_energy_landscape_reconstruction.py
+│   │   ├── 08_vector_field_bifurcation.py
+│   │   ├── 09_critical_slowing_down.py
+│   │   └── 10_cusp_catastrophe_mapping.py
+│   ├── 05_figures_generator
+│   │   ├── 03_plot_network_interference.py
+│   │   ├── figures
+│   │   │   ├── Critical_Phase_Transition.png
+│   │   │   ├── Critical_Slowing_Down_Analysis.png
+│   │   │   ├── Cusp_Catastrophe_Mapping.png
+│   │   │   ├── DMN_ECN_Interference_Graph.png
+│   │   │   ├── Grand_Finale_Frequency_Synergy_BubblePlot.png
+│   │   │   ├── Group_Contrast_Biomarkers_FEAR.png
+│   │   │   ├── Group_Contrast_Biomarkers_HAPPY.png
+│   │   │   ├── Group_Contrast_Biomarkers_SAD.png
+│   │   │   ├── Information_Energy_Landscape.png
+│   │   │   ├── Information_Geometry_Transition_Phi.png
+│   │   │   ├── Phase_Synergy_Tridimensional_Space.png
+│   │   │   ├── PID_Synergy_UniqueDMN_HAPPY.png
+│   │   │   ├── State_Space_DDS_vs_Synergy_HAPPY.png
+│   │   │   └── Vector_Field_Bifurcation.png
+│   │   └── report_final_mdd_dynamics.md
+│   ├── config
+│   │   └── analysis.yaml
+│   ├── derivatives
+│   │   ├── ais_component_erp_residual_r2pos
+│   │   │   └── ais_component_erp_residual_r2pos_results.csv
+│   │   ├── ais_n450
+│   │   ├── ais_n450_residual
+│   │   ├── ais_n450_residual_r2pos
+│   │   ├── dds_evidence_pack
+│   │   │   ├── dds_fit_summary_all.csv
+│   │   │   ├── dds_r2_condition_stats_all.csv
+│   │   │   ├── dds_r2_group_cost_stats_all.csv
+│   │   │   └── dds_subset_counts.csv
+│   │   ├── dds_peak_aligned_component_erp
+│   │   │   └── dds_component_erp_results.csv
+│   │   ├── dds_peak_aligned_n450
+│   │   ├── epochs
+│   │   │   ├── 02010002-epo.fif
+│   │   │   ├── 02010004-epo.fif
+│   │   │   ├── 02010005-epo.fif
+│   │   │   ├── 02010006-epo.fif
+│   │   │   ├── 02010008_-epo.fif
+│   │   │   ├── 02010010-epo.fif
+│   │   │   ├── 02010011-epo.fif
+│   │   │   ├── 02010012-epo.fif
+│   │   │   ├── 02010013-epo.fif
+│   │   │   ├── 02010015-epo.fif
+│   │   │   ├── 02010016-epo.fif
+│   │   │   ├── 02010018-epo.fif
+│   │   │   ├── 02010019-epo.fif
+│   │   │   ├── 02010021-epo.fif
+│   │   │   ├── 02010022-epo.fif
+│   │   │   ├── 02010023-epo.fif
+│   │   │   ├── 02010024-epo.fif
+│   │   │   ├── 02010025-epo.fif
+│   │   │   ├── 02010026-epo.fif
+│   │   │   ├── 02010028-epo.fif
+│   │   │   ├── 02010030-epo.fif
+│   │   │   ├── 02010033-epo.fif
+│   │   │   ├── 02010034-epo.fif
+│   │   │   ├── 02010036-epo.fif
+│   │   │   ├── 02020008_-epo.fif
+│   │   │   ├── 02020010_-epo.fif
+│   │   │   ├── 02020013_-epo.fif
+│   │   │   ├── 02020014_-epo.fif
+│   │   │   ├── 02020015_-epo.fif
+│   │   │   ├── 02020016_-epo.fif
+│   │   │   ├── 02020018_-epo.fif
+│   │   │   ├── 02020019_-epo.fif
+│   │   │   ├── 02020020_-epo.fif
+│   │   │   ├── 02020021_-epo.fif
+│   │   │   ├── 02020022_-epo.fif
+│   │   │   ├── 02020023_-epo.fif
+│   │   │   ├── 02020025_-epo.fif
+│   │   │   ├── 02020026_-epo.fif
+│   │   │   ├── 02020027_-epo.fif
+│   │   │   ├── 02020029_-epo.fif
+│   │   │   ├── 02030002-epo.fif
+│   │   │   ├── 02030003-epo.fif
+│   │   │   ├── 02030004-epo.fif
+│   │   │   ├── 02030005-epo.fif
+│   │   │   ├── 02030006-epo.fif
+│   │   │   ├── 02030007-epo.fif
+│   │   │   ├── 02030009-epo.fif
+│   │   │   ├── 02030014-epo.fif
+│   │   │   ├── 02030017-epo.fif
+│   │   │   ├── 02030018-epo.fif
+│   │   │   ├── 02030019_-epo.fif
+│   │   │   ├── 02030020_-epo.fif
+│   │   │   └── 02030021-epo.fif
+│   │   ├── evokeds
+│   │   │   ├── 02010002_evoked_all-ave.fif
+│   │   │   ├── 02010004_evoked_all-ave.fif
+│   │   │   ├── 02010005_evoked_all-ave.fif
+│   │   │   ├── 02010006_evoked_all-ave.fif
+│   │   │   ├── 02010008__evoked_all-ave.fif
+│   │   │   ├── 02010010_evoked_all-ave.fif
+│   │   │   ├── 02010010_evoked_dot-ave.fif
+│   │   │   ├── 02010011_evoked_all-ave.fif
+│   │   │   ├── 02010012_evoked_all-ave.fif
+│   │   │   ├── 02010013_evoked_all-ave.fif
+│   │   │   ├── 02010015_evoked_all-ave.fif
+│   │   │   ├── 02010016_evoked_all-ave.fif
+│   │   │   ├── 02010018_evoked_all-ave.fif
+│   │   │   ├── 02010019_evoked_all-ave.fif
+│   │   │   ├── 02010021_evoked_all-ave.fif
+│   │   │   ├── 02010022_evoked_all-ave.fif
+│   │   │   ├── 02010023_evoked_all-ave.fif
+│   │   │   ├── 02010024_evoked_all-ave.fif
+│   │   │   ├── 02010025_evoked_all-ave.fif
+│   │   │   ├── 02010026_evoked_all-ave.fif
+│   │   │   ├── 02010028_evoked_all-ave.fif
+│   │   │   ├── 02010030_evoked_all-ave.fif
+│   │   │   ├── 02010033_evoked_all-ave.fif
+│   │   │   ├── 02010034_evoked_all-ave.fif
+│   │   │   ├── 02010036_evoked_all-ave.fif
+│   │   │   ├── 02020008__evoked_all-ave.fif
+│   │   │   ├── 02020010__evoked_all-ave.fif
+│   │   │   ├── 02020013__evoked_all-ave.fif
+│   │   │   ├── 02020014__evoked_all-ave.fif
+│   │   │   ├── 02020015__evoked_all-ave.fif
+│   │   │   ├── 02020016__evoked_all-ave.fif
+│   │   │   ├── 02020018__evoked_all-ave.fif
+│   │   │   ├── 02020019__evoked_all-ave.fif
+│   │   │   ├── 02020020__evoked_all-ave.fif
+│   │   │   ├── 02020021__evoked_all-ave.fif
+│   │   │   ├── 02020022__evoked_all-ave.fif
+│   │   │   ├── 02020023__evoked_all-ave.fif
+│   │   │   ├── 02020025__evoked_all-ave.fif
+│   │   │   ├── 02020026__evoked_all-ave.fif
+│   │   │   ├── 02020027__evoked_all-ave.fif
+│   │   │   ├── 02020029__evoked_all-ave.fif
+│   │   │   ├── 02030002_evoked_all-ave.fif
+│   │   │   ├── 02030003_evoked_all-ave.fif
+│   │   │   ├── 02030004_evoked_all-ave.fif
+│   │   │   ├── 02030005_evoked_all-ave.fif
+│   │   │   ├── 02030006_evoked_all-ave.fif
+│   │   │   ├── 02030007_evoked_all-ave.fif
+│   │   │   ├── 02030009_evoked_all-ave.fif
+│   │   │   ├── 02030014_evoked_all-ave.fif
+│   │   │   ├── 02030017_evoked_all-ave.fif
+│   │   │   ├── 02030018_evoked_all-ave.fif
+│   │   │   ├── 02030019__evoked_all-ave.fif
+│   │   │   ├── 02030020__evoked_all-ave.fif
+│   │   │   ├── 02030021_evoked_all-ave.fif
+│   │   │   ├── grand_evoked_mdd-ave.fif
+│   │   │   └── grand_evoked_nc-ave.fif
+│   │   ├── figures_paper
+│   │   ├── final_mdd_biomarker_matrix.csv
+│   │   ├── phase_coherence_happy
+│   │   │   └── wpli_results_happy.csv
+│   │   ├── pid_ecn_dmn_to_cacc_happy
+│   │   │   └── pid_happy_results.csv
+│   │   ├── pupil_data
+│   │   ├── results_n450_clinical
+│   │   │   └── agrega_groupo.py
+│   │   ├── reviewer_controls
+│   │   ├── te_component_erp_residual_r2pos
+│   │   │   ├── pid_lh_rh_frontal_residual_r2pos.csv
+│   │   │   ├── pid_lh_rh_frontal_residual_r2pos_warnings.txt
+│   │   │   ├── te_component_erp_residual_r2pos_results.csv
+│   │   │   └── te_component_erp_residual_r2pos_warnings.txt
+│   │   ├── te_n450
+│   │   │   └── group_architecture
+│   │   ├── te_n450_residual
+│   │   ├── te_n450_residual_r2pos
+│   │   ├── trial_roi_timeseries
+│   │   │   ├── roi_channel_warnings_trial_roi_timeseries.txt
+│   │   │   └── trial_roi_timeseries.csv
+│   │   ├── trial_roi_timeseries_qc
+│   │   ├── trial_roi_timeseries_residual
+│   │   └── trial_roi_timeseries_residual_r2pos
+│   │       └── trial_roi_timeseries_residual_r2pos.csv
+│   ├── new_theory_mdd.md
+│   ├── pipeline.py
+│   ├── README.md
+│   ├── README_STAGEPLAN.md
+│   └── run_pipeline.sh
+├── participants.json
+├── participants.tsv
+├── README
+├── sub-M87100058
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87100058_ses-01_coordsystem.json
+│       │   ├── sub-M87100058_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87100058_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87100058_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87100058_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87100058_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87100058_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87100058_ses-01_scans.tsv
+├── sub-M87100403
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87100403_ses-01_coordsystem.json
+│       │   ├── sub-M87100403_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87100403_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87100403_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87100403_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87100403_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87100403_ses-01_scans.tsv
+├── sub-M87100481
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87100481_ses-01_coordsystem.json
+│       │   ├── sub-M87100481_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87100481_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87100481_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87100481_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87100481_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87100481_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87100481_ses-01_scans.tsv
+├── sub-M87102708
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87102708_ses-01_coordsystem.json
+│       │   ├── sub-M87102708_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87102708_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87102708_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87102708_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87102708_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87102708_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87102708_ses-01_scans.tsv
+├── sub-M87103382
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87103382_ses-01_coordsystem.json
+│       │   ├── sub-M87103382_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87103382_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87103382_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87103382_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87103382_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87103382_ses-01_scans.tsv
+├── sub-M87103557
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87103557_ses-01_coordsystem.json
+│       │   ├── sub-M87103557_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87103557_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87103557_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87103557_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87103557_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87103557_ses-01_scans.tsv
+├── sub-M87103820
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87103820_ses-01_coordsystem.json
+│       │   ├── sub-M87103820_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87103820_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87103820_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87103820_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87103820_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87103820_ses-01_scans.tsv
+├── sub-M87104422
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87104422_ses-01_coordsystem.json
+│       │   ├── sub-M87104422_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87104422_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87104422_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87104422_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87104422_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87104422_ses-01_scans.tsv
+├── sub-M87108211
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87108211_ses-01_coordsystem.json
+│       │   ├── sub-M87108211_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87108211_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87108211_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87108211_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87108211_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87108211_ses-01_scans.tsv
+├── sub-M87108718
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87108718_ses-01_coordsystem.json
+│       │   ├── sub-M87108718_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87108718_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87108718_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87108718_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87108718_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87108718_ses-01_scans.tsv
+├── sub-M87109185
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87109185_ses-01_coordsystem.json
+│       │   ├── sub-M87109185_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87109185_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87109185_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87109185_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87109185_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87109185_ses-01_scans.tsv
+├── sub-M87110097
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87110097_ses-01_coordsystem.json
+│       │   ├── sub-M87110097_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87110097_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87110097_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87110097_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87110097_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87110097_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87110097_ses-01_scans.tsv
+├── sub-M87110408
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87110408_ses-01_coordsystem.json
+│       │   ├── sub-M87110408_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87110408_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87110408_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87110408_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87110408_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87110408_ses-01_scans.tsv
+├── sub-M87110559
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87110559_ses-01_coordsystem.json
+│       │   ├── sub-M87110559_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87110559_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87110559_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87110559_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87110559_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87110559_ses-01_scans.tsv
+├── sub-M87111894
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87111894_ses-01_coordsystem.json
+│       │   ├── sub-M87111894_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87111894_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87111894_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87111894_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87111894_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87111894_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87111894_ses-01_scans.tsv
+├── sub-M87112953
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87112953_ses-01_coordsystem.json
+│       │   ├── sub-M87112953_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87112953_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87112953_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87112953_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87112953_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87112953_ses-01_scans.tsv
+├── sub-M87114359
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87114359_ses-01_coordsystem.json
+│       │   ├── sub-M87114359_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87114359_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87114359_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87114359_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87114359_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87114359_ses-01_scans.tsv
+├── sub-M87114852
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87114852_ses-01_coordsystem.json
+│       │   ├── sub-M87114852_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87114852_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87114852_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87114852_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87114852_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87114852_ses-01_scans.tsv
+├── sub-M87118946
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87118946_ses-01_coordsystem.json
+│       │   ├── sub-M87118946_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87118946_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87118946_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87118946_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87118946_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87118946_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87118946_ses-01_scans.tsv
+├── sub-M87121835
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87121835_ses-01_coordsystem.json
+│       │   ├── sub-M87121835_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87121835_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87121835_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87121835_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87121835_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87121835_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87121835_ses-01_scans.tsv
+├── sub-M87125130
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87125130_ses-01_coordsystem.json
+│       │   ├── sub-M87125130_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87125130_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87125130_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87125130_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87125130_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87125130_ses-01_scans.tsv
+├── sub-M87127530
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87127530_ses-01_coordsystem.json
+│       │   ├── sub-M87127530_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87127530_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87127530_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87127530_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87127530_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87127530_ses-01_scans.tsv
+├── sub-M87129414
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87129414_ses-01_coordsystem.json
+│       │   ├── sub-M87129414_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87129414_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87129414_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87129414_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87129414_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87129414_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87129414_ses-01_scans.tsv
+├── sub-M87130775
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87130775_ses-01_coordsystem.json
+│       │   ├── sub-M87130775_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87130775_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87130775_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87130775_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87130775_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87130775_ses-01_scans.tsv
+├── sub-M87130996
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87130996_ses-01_coordsystem.json
+│       │   ├── sub-M87130996_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87130996_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87130996_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87130996_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87130996_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87130996_ses-01_scans.tsv
+├── sub-M87134034
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87134034_ses-01_coordsystem.json
+│       │   ├── sub-M87134034_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87134034_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87134034_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87134034_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87134034_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87134034_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87134034_ses-01_scans.tsv
+├── sub-M87134159
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87134159_ses-01_coordsystem.json
+│       │   ├── sub-M87134159_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87134159_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87134159_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87134159_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87134159_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87134159_ses-01_scans.tsv
+├── sub-M87137391
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87137391_ses-01_coordsystem.json
+│       │   ├── sub-M87137391_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87137391_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87137391_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87137391_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87137391_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87137391_ses-01_scans.tsv
+├── sub-M87138414
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87138414_ses-01_coordsystem.json
+│       │   ├── sub-M87138414_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87138414_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87138414_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87138414_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87138414_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87138414_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87138414_ses-01_scans.tsv
+├── sub-M87139247
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87139247_ses-01_coordsystem.json
+│       │   ├── sub-M87139247_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87139247_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87139247_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87139247_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87139247_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87139247_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87139247_ses-01_scans.tsv
+├── sub-M87139600
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87139600_ses-01_coordsystem.json
+│       │   ├── sub-M87139600_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87139600_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87139600_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87139600_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87139600_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87139600_ses-01_scans.tsv
+├── sub-M87140254
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87140254_ses-01_coordsystem.json
+│       │   ├── sub-M87140254_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87140254_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87140254_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87140254_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87140254_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87140254_ses-01_scans.tsv
+├── sub-M87142287
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87142287_ses-01_coordsystem.json
+│       │   ├── sub-M87142287_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87142287_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87142287_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87142287_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87142287_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87142287_ses-01_scans.tsv
+├── sub-M87142864
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87142864_ses-01_coordsystem.json
+│       │   ├── sub-M87142864_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87142864_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87142864_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87142864_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87142864_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87142864_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87142864_ses-01_scans.tsv
+├── sub-M87143893
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87143893_ses-01_coordsystem.json
+│       │   ├── sub-M87143893_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87143893_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87143893_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87143893_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87143893_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87143893_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87143893_ses-01_scans.tsv
+├── sub-M87143931
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87143931_ses-01_coordsystem.json
+│       │   ├── sub-M87143931_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87143931_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87143931_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87143931_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87143931_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87143931_ses-01_scans.tsv
+├── sub-M87144409
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87144409_ses-01_coordsystem.json
+│       │   ├── sub-M87144409_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87144409_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87144409_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87144409_ses-01_scans.tsv
+├── sub-M87145927
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87145927_ses-01_coordsystem.json
+│       │   ├── sub-M87145927_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87145927_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87145927_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87145927_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87145927_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87145927_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87145927_ses-01_scans.tsv
+├── sub-M87146411
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87146411_ses-01_coordsystem.json
+│       │   ├── sub-M87146411_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87146411_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87146411_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87146411_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87146411_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87146411_ses-01_scans.tsv
+├── sub-M87146538
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87146538_ses-01_coordsystem.json
+│       │   ├── sub-M87146538_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87146538_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87146538_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87146538_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87146538_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87146538_ses-01_scans.tsv
+├── sub-M87146735
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87146735_ses-01_coordsystem.json
+│       │   ├── sub-M87146735_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87146735_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87146735_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87146735_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87146735_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87146735_ses-01_scans.tsv
+├── sub-M87146887
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87146887_ses-01_coordsystem.json
+│       │   ├── sub-M87146887_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87146887_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87146887_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87146887_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87146887_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87146887_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87146887_ses-01_scans.tsv
+├── sub-M87148080
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87148080_ses-01_coordsystem.json
+│       │   ├── sub-M87148080_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87148080_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87148080_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87148080_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87148080_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87148080_ses-01_scans.tsv
+├── sub-M87150253
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87150253_ses-01_coordsystem.json
+│       │   ├── sub-M87150253_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87150253_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87150253_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87150253_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87150253_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87150253_ses-01_scans.tsv
+├── sub-M87150527
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87150527_ses-01_coordsystem.json
+│       │   ├── sub-M87150527_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87150527_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87150527_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87150527_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87150527_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87150527_ses-01_scans.tsv
+├── sub-M87150564
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87150564_ses-01_coordsystem.json
+│       │   ├── sub-M87150564_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87150564_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87150564_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87150564_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87150564_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87150564_ses-01_scans.tsv
+├── sub-M87153425
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87153425_ses-01_coordsystem.json
+│       │   ├── sub-M87153425_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87153425_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87153425_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87153425_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87153425_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87153425_ses-01_scans.tsv
+├── sub-M87154375
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87154375_ses-01_coordsystem.json
+│       │   ├── sub-M87154375_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87154375_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87154375_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87154375_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87154375_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87154375_ses-01_scans.tsv
+├── sub-M87155374
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87155374_ses-01_coordsystem.json
+│       │   ├── sub-M87155374_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87155374_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87155374_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87155374_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87155374_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87155374_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87155374_ses-01_scans.tsv
+├── sub-M87156984
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87156984_ses-01_coordsystem.json
+│       │   ├── sub-M87156984_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87156984_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87156984_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87156984_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87156984_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87156984_ses-01_scans.tsv
+├── sub-M87157961
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87157961_ses-01_coordsystem.json
+│       │   ├── sub-M87157961_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87157961_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87157961_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87157961_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87157961_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87157961_ses-01_scans.tsv
+├── sub-M87160397
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87160397_ses-01_coordsystem.json
+│       │   ├── sub-M87160397_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87160397_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87160397_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87160397_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87160397_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87160397_ses-01_scans.tsv
+├── sub-M87160584
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87160584_ses-01_coordsystem.json
+│       │   ├── sub-M87160584_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87160584_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87160584_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87160584_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87160584_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87160584_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87160584_ses-01_scans.tsv
+├── sub-M87162136
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87162136_ses-01_coordsystem.json
+│       │   ├── sub-M87162136_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87162136_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87162136_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87162136_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87162136_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87162136_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87162136_ses-01_scans.tsv
+├── sub-M87164176
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87164176_ses-01_coordsystem.json
+│       │   ├── sub-M87164176_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87164176_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87164176_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87164176_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87164176_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87164176_ses-01_scans.tsv
+├── sub-M87164575
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87164575_ses-01_coordsystem.json
+│       │   ├── sub-M87164575_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87164575_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87164575_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87164575_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87164575_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87164575_ses-01_scans.tsv
+├── sub-M87165811
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87165811_ses-01_coordsystem.json
+│       │   ├── sub-M87165811_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87165811_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87165811_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87165811_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87165811_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87165811_ses-01_scans.tsv
+├── sub-M87167594
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87167594_ses-01_coordsystem.json
+│       │   ├── sub-M87167594_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87167594_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87167594_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87167594_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87167594_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87167594_ses-01_scans.tsv
+├── sub-M87168299
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87168299_ses-01_coordsystem.json
+│       │   ├── sub-M87168299_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87168299_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87168299_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87168299_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87168299_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87168299_ses-01_scans.tsv
+├── sub-M87169210
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87169210_ses-01_coordsystem.json
+│       │   ├── sub-M87169210_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87169210_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87169210_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87169210_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87169210_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87169210_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87169210_ses-01_scans.tsv
+├── sub-M87169286
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87169286_ses-01_coordsystem.json
+│       │   ├── sub-M87169286_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87169286_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87169286_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87169286_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87169286_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87169286_ses-01_scans.tsv
+├── sub-M87170144
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87170144_ses-01_coordsystem.json
+│       │   ├── sub-M87170144_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87170144_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87170144_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87170144_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87170144_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87170144_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87170144_ses-01_scans.tsv
+├── sub-M87171097
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87171097_ses-01_coordsystem.json
+│       │   ├── sub-M87171097_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87171097_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87171097_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87171097_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87171097_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87171097_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87171097_ses-01_scans.tsv
+├── sub-M87171668
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87171668_ses-01_coordsystem.json
+│       │   ├── sub-M87171668_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87171668_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87171668_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87171668_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87171668_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87171668_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87171668_ses-01_scans.tsv
+├── sub-M87173764
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87173764_ses-01_coordsystem.json
+│       │   ├── sub-M87173764_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87173764_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87173764_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87173764_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87173764_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87173764_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87173764_ses-01_scans.tsv
+├── sub-M87174633
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87174633_ses-01_coordsystem.json
+│       │   ├── sub-M87174633_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87174633_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87174633_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87174633_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87174633_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87174633_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87174633_ses-01_scans.tsv
+├── sub-M87175273
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87175273_ses-01_coordsystem.json
+│       │   ├── sub-M87175273_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87175273_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87175273_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87175273_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87175273_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87175273_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87175273_ses-01_scans.tsv
+├── sub-M87175429
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87175429_ses-01_coordsystem.json
+│       │   ├── sub-M87175429_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87175429_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87175429_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87175429_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87175429_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87175429_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87175429_ses-01_scans.tsv
+├── sub-M87176537
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87176537_ses-01_coordsystem.json
+│       │   ├── sub-M87176537_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87176537_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87176537_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87176537_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87176537_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87176537_ses-01_scans.tsv
+├── sub-M87178102
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87178102_ses-01_coordsystem.json
+│       │   ├── sub-M87178102_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87178102_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87178102_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87178102_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87178102_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87178102_ses-01_scans.tsv
+├── sub-M87178210
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87178210_ses-01_coordsystem.json
+│       │   ├── sub-M87178210_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87178210_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87178210_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87178210_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87178210_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87178210_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87178210_ses-01_scans.tsv
+├── sub-M87178611
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87178611_ses-01_coordsystem.json
+│       │   ├── sub-M87178611_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87178611_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87178611_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87178611_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87178611_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87178611_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87178611_ses-01_scans.tsv
+├── sub-M87184941
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87184941_ses-01_coordsystem.json
+│       │   ├── sub-M87184941_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87184941_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87184941_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87184941_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87184941_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87184941_ses-01_scans.tsv
+├── sub-M87185394
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87185394_ses-01_coordsystem.json
+│       │   ├── sub-M87185394_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87185394_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87185394_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87185394_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87185394_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87185394_ses-01_scans.tsv
+├── sub-M87186388
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87186388_ses-01_coordsystem.json
+│       │   ├── sub-M87186388_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87186388_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87186388_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87186388_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87186388_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87186388_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87186388_ses-01_scans.tsv
+├── sub-M87187516
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87187516_ses-01_coordsystem.json
+│       │   ├── sub-M87187516_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87187516_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87187516_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87187516_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87187516_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87187516_ses-01_scans.tsv
+├── sub-M87187776
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87187776_ses-01_coordsystem.json
+│       │   ├── sub-M87187776_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87187776_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87187776_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87187776_ses-01_task-pst_run-1_meg.json
+│       │   ├── sub-M87187776_ses-01_task-pst_run-1_split-01_meg.fif
+│       │   └── sub-M87187776_ses-01_task-pst_run-1_split-02_meg.fif
+│       └── sub-M87187776_ses-01_scans.tsv
+├── sub-M87187838
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87187838_ses-01_coordsystem.json
+│       │   ├── sub-M87187838_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87187838_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87187838_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87187838_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87187838_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87187838_ses-01_scans.tsv
+├── sub-M87190095
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87190095_ses-01_coordsystem.json
+│       │   ├── sub-M87190095_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87190095_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87190095_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87190095_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87190095_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87190095_ses-01_scans.tsv
+├── sub-M87190604
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87190604_ses-01_coordsystem.json
+│       │   ├── sub-M87190604_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87190604_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87190604_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87190604_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87190604_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87190604_ses-01_scans.tsv
+├── sub-M87192693
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87192693_ses-01_coordsystem.json
+│       │   ├── sub-M87192693_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87192693_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87192693_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87192693_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87192693_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87192693_ses-01_scans.tsv
+├── sub-M87195334
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87195334_ses-01_coordsystem.json
+│       │   ├── sub-M87195334_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87195334_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87195334_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87195334_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87195334_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87195334_ses-01_scans.tsv
+├── sub-M87195556
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87195556_ses-01_coordsystem.json
+│       │   ├── sub-M87195556_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87195556_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87195556_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87195556_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87195556_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87195556_ses-01_scans.tsv
+├── sub-M87197101
+│   └── ses-01
+│       ├── meg
+│       │   ├── sub-M87197101_ses-01_coordsystem.json
+│       │   ├── sub-M87197101_ses-01_task-pst_run-1_channels.tsv
+│       │   ├── sub-M87197101_ses-01_task-pst_run-1_events.json
+│       │   ├── sub-M87197101_ses-01_task-pst_run-1_events.tsv
+│       │   ├── sub-M87197101_ses-01_task-pst_run-1_meg.fif
+│       │   └── sub-M87197101_ses-01_task-pst_run-1_meg.json
+│       └── sub-M87197101_ses-01_scans.tsv
+└── sub-M87198523
+    └── ses-01
+        ├── meg
+        │   ├── sub-M87198523_ses-01_acq-calibration_meg.dat
+        │   ├── sub-M87198523_ses-01_acq-crosstalk_meg.fif
+        │   ├── sub-M87198523_ses-01_coordsystem.json
+        │   ├── sub-M87198523_ses-01_task-pst_run-1_channels.tsv
+        │   ├── sub-M87198523_ses-01_task-pst_run-1_events.json
+        │   ├── sub-M87198523_ses-01_task-pst_run-1_events.tsv
+        │   ├── sub-M87198523_ses-01_task-pst_run-1_meg.fif
+        │   └── sub-M87198523_ses-01_task-pst_run-1_meg.json
+        └── sub-M87198523_ses-01_scans.tsv
+
+297 directories, 915 files

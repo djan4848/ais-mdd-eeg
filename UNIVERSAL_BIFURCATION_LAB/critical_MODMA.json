@@ -1,0 +1,6 @@
+{
+    "dataset": "MODMA",
+    "metric": "PHQ-9",
+    "critical_point_bc": 18.44826462178342,
+    "k_slope": 0.10000176554390768
+}

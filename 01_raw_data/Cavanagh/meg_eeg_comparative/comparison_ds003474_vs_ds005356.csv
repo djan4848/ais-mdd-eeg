@@ -1,0 +1,7 @@
+pipeline,roc_auc,balanced_accuracy,dataset,improvement_vs_eeg_baseline
+Baseline spectral+entropy,0.675,0.64,"ds003474 (EEG, PST-resting)",0.0
+Baseline+Connectivity (PLV),0.807,0.75,"ds003474 (EEG, PST-resting)",0.132
+Microstates+Baseline,0.825,0.77,"ds003474 (EEG, PST-resting)",0.1499999999999999
+Boruta confirmed (n=5),0.788,0.74,"ds003474 (EEG, PST-resting)",0.11299999999999999
+DDS+Info+Baseline,0.836,0.78,"ds003474 (EEG, PST-resting)",0.16099999999999992
+MEG-concurrent EEG / SVM-Lin,0.585,0.564,"ds005356 (MEG+EEG, PST-task)",-0.09000000000000008

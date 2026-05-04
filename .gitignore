@@ -1,0 +1,83 @@
+# ── Raw EEG data (never commit — point to OpenNeuro/OSF instead) ────────────
+*.fif
+*.set
+*.fdt
+*.mat
+*.raw
+*.edf
+*.bdf
+*.vhdr
+*.vmrk
+*.eeg
+
+# ── sLORETA source imaging files ─────────────────────────────────────────────
+*.slor
+*.spinv
+*.sxyz
+*.TestSetup
+*.pwarning
+*.DOC
+01_raw_data/Cavanagh/Depression_PS_Task/Scripts from Manuscript/sLORETA/
+
+# ── Task stimulus audio ───────────────────────────────────────────────────────
+*.wav
+
+# ── Binary / non-text results ─────────────────────────────────────────────────
+*.pkl
+*.xlsx
+*.xls
+*.rtf
+*.doc
+
+# ── Large archives ───────────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.tar.bz2
+*.gz
+*.7z
+
+# ── Per-subject PARAFAC plots (261 MB, regenerable) ─────────────────────────
+01_raw_data/Cavanagh/Depression_PS_Task/derivatives/parafac/[0-9]*_*.png
+
+# ── Unrelated datasets ───────────────────────────────────────────────────────
+Resilience/
+data/
+
+# ── Nested git repos (OpenNeuro datasets have their own .git) ────────────────
+01_raw_data/MODMA/DDS-MODMA/
+01_raw_data/Cavanagh/ds003474/
+01_raw_data/Cavanagh/ds003478/
+01_raw_data/Cavanagh/ds005356/
+
+# ── Scratch / work-in-progress ───────────────────────────────────────────────
+poubelle/
+UNIVERSAL_BIFURCATION_LAB/arqueologia_resultados/
+UNIVERSAL_BIFURCATION_LAB/neuroscience_trends/
+
+# ── Python cache ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# ── Claude Code internal ─────────────────────────────────────────────────────
+.claude/
+01_raw_data/Cavanagh/.claude/
+
+# ── Office documents (drafts, not analysis) ──────────────────────────────────
+*.docx
+*.odt
+*.pdf
+
+# ── Generated logs (reproducible by re-running scripts) ──────────────────────
+*.log
+
+# ── Misc artefacts ───────────────────────────────────────────────────────────
+tree.txt
+error_test*.txt
+resume.txt
+modma.txt
+modma_ch.txt
+hc_alpha_validation.png
+*.csv#
+*.csig

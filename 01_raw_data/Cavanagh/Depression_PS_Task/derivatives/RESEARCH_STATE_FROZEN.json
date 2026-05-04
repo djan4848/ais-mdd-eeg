@@ -1,0 +1,412 @@
+{
+  "freeze_date": "2026-05-02",
+  "files": {
+    "ais_eeg": {
+      "path": "/media/neuraldyn/PortableSSD/DEPRESSION/01_raw_data/Cavanagh/Depression_PS_Task/derivatives/erp_it_cavanagh/delta_ais_aggregated.csv",
+      "exists": true
+    },
+    "ais_meg_full": {
+      "path": "/media/neuraldyn/PortableSSD/DEPRESSION/01_raw_data/Cavanagh/ds005356/derivatives/meg_ais_pre_full_sample_results.csv",
+      "exists": true
+    },
+    "clinical": {
+      "path": "/media/neuraldyn/PortableSSD/DEPRESSION/01_raw_data/Cavanagh/Depression_PS_Task/derivatives/clinical_lookup_ps_task.csv",
+      "exists": true
+    },
+    "ais_rest_tdb": {
+      "path": "/media/neuraldyn/PortableSSD/DEPRESSION/06_manuscript_assets/tdbrain_ais_rest_results.csv",
+      "exists": true
+    },
+    "robustness": {
+      "path": "/media/neuraldyn/PortableSSD/DEPRESSION/01_raw_data/Cavanagh/Depression_PS_Task/derivatives/erp_it_cavanagh/ais_pre_robustness_stats.csv",
+      "exists": true
+    },
+    "subtype_ais": {
+      "path": "/media/neuraldyn/PortableSSD/DEPRESSION/01_raw_data/Cavanagh/Depression_PS_Task/derivatives/subtype_ais_eeg_subjects.csv",
+      "exists": true
+    },
+    "searchlight": {
+      "path": "/media/neuraldyn/PortableSSD/DEPRESSION/01_raw_data/Cavanagh/ds005356/derivatives/channel_searchlight_results.csv",
+      "exists": true
+    }
+  },
+  "primary_eeg": {
+    "N_CTL": 86,
+    "N_MDD": 23,
+    "CTL_mean": 1.1117922490674905,
+    "MDD_mean": 1.0286541641955316,
+    "cohens_d": 0.8060669101785117,
+    "mwu_p": 0.00011009155299798917,
+    "expected_d": 0.817,
+    "flag": "OK"
+  },
+  "meg_replication": {
+    "N_CTL": 35,
+    "N_MDD": 47,
+    "CTL_mean": 0.14638688353307244,
+    "MDD_mean": 0.13349092582132013,
+    "cohens_d": 0.37164354185572246,
+    "mwu_p": 0.08193065932284294,
+    "expected_d": 0.372,
+    "flag": "OK"
+  },
+  "scar_hypothesis": {
+    "N_current": 11,
+    "N_past": 12,
+    "d_cur_over_past": 0.9645601813491071,
+    "mwu_p": 0.01686317878840567,
+    "expected_d": 0.965,
+    "flag": "OK"
+  },
+  "tdbrain_ais_rest": {
+    "N_remitters": 65,
+    "N_nonremitters": 56,
+    "rem_mean": 1.0474838108300057,
+    "nonrem_mean": 1.110972232750903,
+    "cohens_d_rem_over_nonrem": -0.33554956273663683,
+    "mwu_p_nonrem_greater": 0.030826494743779423,
+    "expected_d": -0.336,
+    "flag": "OK",
+    "interpretation": "WRONG DIRECTION \u2014 non-remitters have higher AIS_rest; resting AIS \u2260 task AIS_pre"
+  },
+  "pending": [
+    "Magnetometer searchlight for MEG0511/MEG0921 (Cavanagh 2025 sensors)",
+    "Verify EEG064 anatomical location (posterior temporal \u2014 mismatch with FCz hypothesis)",
+    "Final manuscript Figure 1 (AIS_pre CTL vs MDD violin + ROC curve)",
+    "Formal paper section: two-axis model (low task AIS_pre + high resting AIS_rest)",
+    "Optional: contact jcavanagh@unm.edu for PST data with episode history"
+  ],
+  "key_conclusions": {
+    "primary": "AIS_pre (FCz, \u2212200\u21920ms pre-feedback) CTL > MDD, d=0.817, p<0.001 (N=109; robustness \u2212500ms variant: d=0.874)",
+    "meg": "MEG partial replication EEG064, d=0.558 (ungated); EEG007 unreliable dataset-wide",
+    "scar": "MDD_past lower AIS_pre than MDD_current despite lower HamD \u2014 scar hypothesis supported",
+    "tdbrain": "AIS_rest does NOT predict rTMS remission (wrong direction, d=\u22120.336) \u2014 construct dissociation",
+    "subtype": "AIS_LOW enriched 2.8\u00d7 in MDD but not discrete (GMM weakly bimodal, TEPS null)"
+  },
+  "te_f1_fcz": {
+    "analysis_date": "2026-05-03",
+    "window": "-200ms to 0ms (pre-feedback)",
+    "primary_pair": "F1\u2192FCz (left DLPFC\u2192ACC)",
+    "primary_d": -0.601,
+    "primary_p": 0.0089,
+    "reference_null": {
+      "pair": "Fz\u2192FCz",
+      "d": -0.007,
+      "p": 0.845
+    },
+    "pairs_tested": [
+      "DLPFC_L\u2192ACC",
+      "DLPFC_R\u2192ACC",
+      "premotor_L\u2192ACC",
+      "premotor_R\u2192ACC",
+      "mesial_F\u2192ACC"
+    ],
+    "full_results": [
+      {
+        "pair": "DLPFC_L\u2192ACC",
+        "measure": "fwd",
+        "d": -0.601,
+        "p": 0.0089,
+        "direction": "MDD>CTL",
+        "CTL_mean": 0.1386,
+        "MDD_mean": 0.14767,
+        "N_CTL": 87,
+        "N_MDD": 23
+      },
+      {
+        "pair": "DLPFC_L\u2192ACC",
+        "measure": "net",
+        "d": 0.392,
+        "p": 0.1762,
+        "direction": "CTL>MDD",
+        "CTL_mean": -0.01917,
+        "MDD_mean": -0.02443,
+        "N_CTL": 87,
+        "N_MDD": 23
+      },
+      {
+        "pair": "DLPFC_R\u2192ACC",
+        "measure": "fwd",
+        "d": -0.426,
+        "p": 0.0425,
+        "direction": "MDD>CTL",
+        "CTL_mean": 0.14092,
+        "MDD_mean": 0.14826,
+        "N_CTL": 87,
+        "N_MDD": 23
+      },
+      {
+        "pair": "DLPFC_R\u2192ACC",
+        "measure": "net",
+        "d": 0.008,
+        "p": 0.8831,
+        "direction": "CTL>MDD",
+        "CTL_mean": -0.0211,
+        "MDD_mean": -0.02121,
+        "N_CTL": 87,
+        "N_MDD": 23
+      },
+      {
+        "pair": "premotor_L\u2192ACC",
+        "measure": "fwd",
+        "d": -0.506,
+        "p": 0.0153,
+        "direction": "MDD>CTL",
+        "CTL_mean": 0.14003,
+        "MDD_mean": 0.14793,
+        "N_CTL": 87,
+        "N_MDD": 23
+      },
+      {
+        "pair": "premotor_L\u2192ACC",
+        "measure": "net",
+        "d": 0.013,
+        "p": 0.5967,
+        "direction": "CTL>MDD",
+        "CTL_mean": -0.01397,
+        "MDD_mean": -0.01415,
+        "N_CTL": 87,
+        "N_MDD": 23
+      },
+      {
+        "pair": "premotor_R\u2192ACC",
+        "measure": "fwd",
+        "d": -0.37,
+        "p": 0.0881,
+        "direction": "MDD>CTL",
+        "CTL_mean": 0.14188,
+        "MDD_mean": 0.14816,
+        "N_CTL": 87,
+        "N_MDD": 23
+      },
+      {
+        "pair": "premotor_R\u2192ACC",
+        "measure": "net",
+        "d": -0.006,
+        "p": 0.959,
+        "direction": "MDD>CTL",
+        "CTL_mean": -0.01166,
+        "MDD_mean": -0.01158,
+        "N_CTL": 87,
+        "N_MDD": 23
+      },
+      {
+        "pair": "mesial_F\u2192ACC",
+        "measure": "fwd",
+        "d": -0.345,
+        "p": 0.0506,
+        "direction": "MDD>CTL",
+        "CTL_mean": 0.1287,
+        "MDD_mean": 0.13307,
+        "N_CTL": 87,
+        "N_MDD": 23
+      },
+      {
+        "pair": "mesial_F\u2192ACC",
+        "measure": "net",
+        "d": 0.366,
+        "p": 0.181,
+        "direction": "CTL>MDD",
+        "CTL_mean": -0.01917,
+        "MDD_mean": -0.02357,
+        "N_CTL": 87,
+        "N_MDD": 23
+      }
+    ],
+    "verdict": "FINDING"
+  },
+  "hayling_pre500_blocked": {
+    "analysis_date": "2026-05-03",
+    "reason": "Hayling epochs tmin=-0.2s; -500ms window not captured in any processed file",
+    "solution": "Re-epoch from raw HYL_*_90_Hz-raw.fif with tmin=-0.6s, then re-apply ICA/AR",
+    "status": "BLOCKED \u2014 re-epoch required"
+  },
+  "chaos_analysis": {
+    "date": "2026-05-03",
+    "dataset": "TDBRAIN restEC, FCz",
+    "N_rem": 65,
+    "N_nrem": 56,
+    "measures_tested": [
+      "ac1",
+      "variance",
+      "sample_entropy",
+      "perm_entropy",
+      "hfd",
+      "dfa_alpha",
+      "csd_index",
+      "ais_rest"
+    ],
+    "best_measure": "perm_entropy",
+    "best_d": 0.384,
+    "best_p": 0.0383,
+    "independent_of_ais": [],
+    "csd_d_ac1": 0.153,
+    "csd_d_var": 0.0,
+    "full_results": [
+      {
+        "measure": "perm_entropy",
+        "Rem": 0.60793,
+        "Non-rem": 0.59856,
+        "d": 0.384,
+        "p_mwu": 0.0383,
+        "direction": "Rem>Non-rem",
+        "N_rem": 65,
+        "N_nrem": 56
+      },
+      {
+        "measure": "hfd",
+        "Rem": 1.15928,
+        "Non-rem": 1.14216,
+        "d": 0.357,
+        "p_mwu": 0.0408,
+        "direction": "Rem>Non-rem",
+        "N_rem": 65,
+        "N_nrem": 56
+      },
+      {
+        "measure": "ais_rest",
+        "Rem": 1.04748,
+        "Non-rem": 1.11097,
+        "d": -0.336,
+        "p_mwu": 0.0617,
+        "direction": "Non-rem>Rem",
+        "N_rem": 65,
+        "N_nrem": 56
+      },
+      {
+        "measure": "csd_index",
+        "Rem": 0.0,
+        "Non-rem": 0.0,
+        "d": -0.0,
+        "p_mwu": 0.2925,
+        "direction": "Non-rem>Rem",
+        "N_rem": 65,
+        "N_nrem": 56
+      },
+      {
+        "measure": "variance",
+        "Rem": 0.0,
+        "Non-rem": 0.0,
+        "d": -0.0,
+        "p_mwu": 0.2973,
+        "direction": "Non-rem>Rem",
+        "N_rem": 65,
+        "N_nrem": 56
+      },
+      {
+        "measure": "sample_entropy",
+        "Rem": 0.49863,
+        "Non-rem": 0.48874,
+        "d": 0.195,
+        "p_mwu": 0.3246,
+        "direction": "Rem>Non-rem",
+        "N_rem": 65,
+        "N_nrem": 56
+      },
+      {
+        "measure": "ac1",
+        "Rem": 0.98555,
+        "Non-rem": 0.9864,
+        "d": -0.153,
+        "p_mwu": 0.3896,
+        "direction": "Non-rem>Rem",
+        "N_rem": 65,
+        "N_nrem": 56
+      },
+      {
+        "measure": "dfa_alpha",
+        "Rem": 0.46751,
+        "Non-rem": 0.45236,
+        "d": 0.077,
+        "p_mwu": 0.431,
+        "direction": "Rem>Non-rem",
+        "N_rem": 65,
+        "N_nrem": 56
+      }
+    ]
+  },
+  "tdbrain_mdd_vs_ctl": {
+    "date": "2026-05-03",
+    "N_mdd": 121,
+    "N_ctl": 47,
+    "MDD_mean": 1.0769,
+    "CTL_mean": 1.4094,
+    "d_mdd_vs_ctl": -2.024,
+    "p_mdd_vs_ctl": 0.0,
+    "direction": "CTL>MDD",
+    "gradient_confirmed": false,
+    "three_way": {
+      "CTL_mean": 1.4094,
+      "Rem_mean": 1.0475,
+      "Nrem_mean": 1.111
+    }
+  },
+  "cavanagh_resting_ds003478": {
+    "date": "2026-05-03",
+    "same_subjects_as_PST": true,
+    "N_CTL": 90,
+    "N_MDD": 23,
+    "CTL_mean": 1.4639,
+    "MDD_mean": 1.4278,
+    "Q1_d": 0.703,
+    "Q1_p": 0.0031,
+    "Q1_direction": "CTL>MDD",
+    "Q2_current_vs_past_d": 0.195,
+    "Q3_r_rest_task": 0.276,
+    "Q3_p": 0.0036,
+    "Q3_R2_shared_pct": 7.6,
+    "Q4_AUC_pre": 0.747,
+    "Q4_AUC_rest": 0.679,
+    "Q4_AUC_both": 0.763
+  },
+  "modma_resting_ais": {
+    "date": "2026-05-03",
+    "N_HC": 29,
+    "N_MDD": 24,
+    "HC_mean": 0.4803,
+    "MDD_mean": 0.4161,
+    "d_hc_vs_mdd": 0.319,
+    "p_hc_vs_mdd": 0.3213,
+    "direction": "HC>MDD",
+    "r_PHQ9": -0.162,
+    "p_PHQ9": 0.2451,
+    "channel": "E6 (FCz equivalent, GSN-HydroCel-128)",
+    "method": "1-40Hz butter, 2s windows, lag=1, bins=4"
+  },
+  "forensic_audit": {
+    "date": "2026-05-03",
+    "baseline": "(-1.0, 0.0)",
+    "baseline_overlap_risk": "NEUTRALISED \u2014 rank-invariant binning",
+    "r_bl_empirical": 1.0,
+    "signal_var_d": -0.306,
+    "signal_amp_d": 0.018,
+    "r_var_AIS_pre": 0.065,
+    "r_splitHalf": 0.969,
+    "ksg_validation_r": 0.962,
+    "tdbrain_r_var_AIS": 0.496
+  },
+  "forensic_audit_all_datasets": {
+    "date": "2026-05-03",
+    "cavanagh_pst": "CONFIRMED \u2014 7/7 risks passed",
+    "design_apriori": [
+      "FCz channel",
+      "-200ms to 0ms window",
+      "current vs past"
+    ],
+    "design_posthoc": [
+      "CTL vs past gradient (exploratory)"
+    ],
+    "scar_d": 0.965,
+    "scar_ci_95": [
+      0.193,
+      2.056
+    ],
+    "scar_p": 0.0337,
+    "scar_verdict": "CONFIRMED",
+    "modma_power": 0.211,
+    "modma_n_needed": 78,
+    "tdbrain_amplitude_d": -0.041,
+    "tdbrain_partial_d": "no_confound",
+    "ds003478_splitHalf_SB": 0.996
+  }
+}
