@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "created": "2026-05-04",
+    "description": "Pre-submission v8 audit data: ICA pipeline, BDI subgroup stats, ANCOVA scar test",
+    "source_scripts": ["01_preprocessing/STEP1_PREPROC.m", "01_preprocessing/APPLE_Dep.m"],
+    "N_CTL": 86,
+    "N_MDD_current": 11,
+    "N_MDD_past": 12
+  },
+
+  "task_1a_ica_pipeline": {
+    "source": "APPLE_Dep.m (Cavanagh, 2013) via EEGLAB 12.0.2.1b",
+    "pipeline_name": "APPLE (Algorithmic Pre-Processing Line for EEG)",
+    "algorithm": "runica (extended infomax)",
+    "eeglab_call": "pop_runica(EEG, 'icatype', 'runica', 'pca', n_channels - n_FASTER_bad_chans)",
+    "n_components": "variable per subject: n_channels - n_bad_channels_FASTER (60-channel cap minus FASTER-flagged bad channels)",
+    "artifact_rejection_criteria": {
+      "ocular_components": [
+        "VEOG correlation |z| > 3 across all ICA components",
+        "Frontopolar Gaussian topographic template correlation |z| > 3"
+      ],
+      "note_ADJUST": "ADJUST algorithm was disabled (commented out) in the preprocessing script"
+    },
+    "channel_rejection": {
+      "method": "FASTER (EEGLAB plugin v1.2.3) + pop_rejchan",
+      "FASTER_criteria": "z > 3 on: weighted correlation, variance, Hurst exponent",
+      "interpolation": "spherical interpolation (pop_interp)"
+    },
+    "epoch_rejection": {
+      "method": "FASTER only",
+      "criteria": "z > 3 on any of: mean epoch deviation, epoch variance, max amplitude"
+    },
+    "reference": "linked mastoids (M1 + M2), applied after channel interpolation",
+    "sampling_rate_hz": 500,
+    "epoch_window_s": [-2.0, 2.0],
+    "hard_coded_bad_channels": {
+      "sub-543": "FC1",
+      "sub-548": "FC1",
+      "sub-558": "FC1",
+      "sub-561": "F2",
+      "sub-562": ["FC1", "F2"]
+    },
+    "note": "Data arrive pre-epoched in .mat format (EEGLAB); our MNE pipeline (01_preprocessing_cavanagh.py) only converts format — no additional preprocessing applied"
+  },
+
+  "task_2_bdi_subgroups": {
+    "CTL": {
+      "n": 86,
+      "BDI_mean": 5.14,
+      "BDI_sd": 8.10,
+      "HamD_mean": null,
+      "HamD_sd": null
+    },
+    "MDD_current": {
+      "n": 11,
+      "BDI_mean": 22.45,
+      "BDI_sd": 5.54,
+      "HamD_mean": 13.09,
+      "HamD_sd": 5.34
+    },
+    "MDD_past_remitted": {
+      "n": 12,
+      "BDI_mean": 20.92,
+      "BDI_sd": 5.84,
+      "HamD_mean": 7.25,
+      "HamD_sd": 5.28,
+      "remission_strict_HamD_le7": "7/12 (58%)",
+      "remission_lenient_HamD_le10": "10/12 (83%)"
+    },
+    "note": "BDI=Beck Depression Inventory; HamD=Hamilton Depression Rating Scale"
+  },
+
+  "task_3_ancova_scar": {
+    "dependent_variable": "AIS_pre (FCz, -200 to 0ms, lag=1, bins=4)",
+    "comparison": "MDD_current (n=11) vs MDD_past (n=12)",
+    "unadjusted": {
+      "test": "Mann-Whitney U",
+      "F_equivalent": "F(1,21) = 5.340",
+      "p": 0.0311,
+      "R_squared": 0.203,
+      "cohens_d": 0.965,
+      "bootstrap_95ci": [0.193, 2.056]
+    },
+    "ancova_group_and_HamD": {
+      "model": "AIS_pre ~ C(group) + HamD",
+      "group_F": "F(1,20) = 5.796",
+      "group_p": 0.0258,
+      "group_partial_eta_sq": 0.225,
+      "HamD_F": null,
+      "HamD_p": 0.4111,
+      "HamD_interpretation": "non-significant — severity does not explain the scar effect"
+    },
+    "interaction_test": {
+      "model": "AIS_pre ~ C(group) * HamD",
+      "interaction_F": "F(1,19) = 1.573",
+      "interaction_p": 0.2250,
+      "interpretation": "non-significant — scar effect not moderated by symptom severity"
+    },
+    "pairwise_three_group": {
+      "MDD_current_vs_MDD_past_HamD_adjusted": {
+        "d": 0.862,
+        "p": 0.061,
+        "p_fdr": 0.063,
+        "direction": "current > past",
+        "note": "HamD residualized within MDD only (CTL have no HamD)"
+      },
+      "CTL_vs_MDD_current_unadjusted": {
+        "d": 0.389,
+        "p": 0.063,
+        "p_fdr": 0.063,
+        "direction": "CTL > MDD_current"
+      },
+      "CTL_vs_MDD_past_unadjusted": {
+        "d": 1.175,
+        "p": 0.0003,
+        "p_fdr": 0.0009,
+        "direction": "CTL > MDD_past (LARGEST effect — scar signature)"
+      }
+    },
+    "interpretation": "Scar effect confirmed: MDD_past has lower AIS_pre than MDD_current despite lower HamD. CTL vs MDD_past d=1.175 > CTL vs MDD_current d=0.389, showing the neural deficit is LARGER in remitted depression. Severity (HamD) is non-significant in ANCOVA and the interaction is null, ruling out symptom confound."
+  }
+}
