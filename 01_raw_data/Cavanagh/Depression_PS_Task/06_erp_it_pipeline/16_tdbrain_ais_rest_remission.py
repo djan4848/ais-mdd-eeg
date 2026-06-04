@@ -162,7 +162,7 @@ for i, row in mdd.iterrows():
             continue
 
         # 1Hz HP filter to remove DC
-        raw.filter(l_freq=HP_FREQ, h_freq=None, verbose='ERROR')
+        raw.filter(l_freq=HP_FREQ, h_freq=40., method='fir', verbose='ERROR')
 
         sig = raw.get_data(picks=[CHAN])[0] * 1e6   # V → µV
         n_wins = len(sig) // WIN_SAMPLES
@@ -332,7 +332,7 @@ for label, win_samp, lag, n_bins in ROBUSTNESS_VARIANTS:
             r.drop_channels([c for c in r.ch_names
                              if c in ['VEOG','HEOG','EMG','ECG','EKG','Status']],
                             on_missing='ignore')
-            r.filter(l_freq=HP_FREQ, h_freq=None, verbose='ERROR')
+            r.filter(l_freq=HP_FREQ, h_freq=40., method='fir', verbose='ERROR')
             if CHAN not in r.ch_names:
                 continue
             s_full = r.get_data(picks=[CHAN])[0] * 1e6

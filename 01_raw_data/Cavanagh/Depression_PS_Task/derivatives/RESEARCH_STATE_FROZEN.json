@@ -408,5 +408,24 @@
     "tdbrain_amplitude_d": -0.041,
     "tdbrain_partial_d": "no_confound",
     "ds003478_splitHalf_SB": 0.996
+  },
+  "modma_resting_ais_ica": {
+    "date": "2026-05-10",
+    "pipeline": "ICA (FastICA n=25, EOG proxy E17/E126/E127) + 1-40Hz",
+    "N_HC": 29,
+    "N_MDD": 24,
+    "HC_mean": 1.1406,
+    "MDD_mean": 1.1271,
+    "d_hc_vs_mdd": 0.116,
+    "p_hc_vs_mdd": 0.5376,
+    "direction": "HC>MDD",
+    "r_PHQ9": -0.117,
+    "p_PHQ9": 0.4024,
+    "n_ica_removed_mean": 1.36,
+    "channel": "E6 (FCz equivalent, GSN-HydroCel-128)",
+    "previous_no_ica": {
+      "d": 0.319,
+      "p": 0.321
+    }
   }
 }
