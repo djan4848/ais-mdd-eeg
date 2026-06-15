@@ -71,6 +71,7 @@ __pycache__/
 *.pdf
 # Exception: final submission manuscript and response letter
 !AIS_MDD_manuscript_v14.docx
+!AIS_MDD_manuscript_v14_highlighted_changes.docx
 !response_to_reviewer_JADR-D-26-00295.docx
 
 # ── Generated logs (reproducible by re-running scripts) ──────────────────────
